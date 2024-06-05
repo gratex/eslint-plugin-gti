@@ -8,6 +8,7 @@
     "test": "jest",
     "build": "rm -rf dist/; mkdir dist/; tsc"
   },
+  "license": "ISC",
   "dependencies": {
     "@types/jest": "^28.1.6",
     "@types/requireindex": "^1.2.0",
