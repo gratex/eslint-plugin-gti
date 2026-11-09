@@ -1,5 +1,5 @@
-import { ruleTester } from '../utils/rule-tester';
 import rule, { MessageIds, RULE_NAME } from '../../src/rules/await-observable';
+import { ruleTester } from '../utils/rule-tester';
 
 const validStatements = [
   `

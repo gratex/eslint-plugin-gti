@@ -1,4 +1,4 @@
-import type { InitialOptionsTsJest } from 'ts-jest'
+import type { JestConfigWithTsJest } from 'ts-jest';
 // import { defaults as tsjPreset } from 'ts-jest/presets'
 // import { defaultsESM as tsjPreset } from 'ts-jest/presets'
 // import { jsWithTs as tsjPreset } from 'ts-jest/presets'
@@ -6,7 +6,7 @@ import type { InitialOptionsTsJest } from 'ts-jest'
 // import { jsWithBabel as tsjPreset } from 'ts-jest/presets'
 // import { jsWithBabelESM as tsjPreset } from 'ts-jest/presets'
 
-const config: InitialOptionsTsJest = {
+const config: JestConfigWithTsJest = {
   verbose: true,
   transform: {
     '^.+\\.tsx?$': 'ts-jest',

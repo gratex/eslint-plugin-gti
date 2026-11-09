@@ -1,6 +1,11 @@
 {
-	"extends": "./tsconfig.json",
-	"include": [
-		"file.ts"
-	]
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "rootDir": "."
+  },
+  "include": [
+    "tests",
+    "file.ts",
+    "jest.config.ts"
+  ]
 }

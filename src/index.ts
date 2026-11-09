@@ -10,6 +10,5 @@ const configs = {
 };
 
 export {
-  rules,
-  configs,
+  configs, rules
 };

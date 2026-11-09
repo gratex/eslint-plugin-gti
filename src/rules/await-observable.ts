@@ -1,6 +1,6 @@
-import * as tsutils from 'tsutils';
-import * as tsEslintUtils from '@typescript-eslint/utils';
 import * as tsEslintTypeUtils from '@typescript-eslint/type-utils';
+import * as tsEslintUtils from '@typescript-eslint/utils';
+import * as tsutils from 'tsutils';
 import { createEslintRule } from '../utils/create-eslint-rule';
 
 export const RULE_NAME = 'await-observable';
@@ -12,16 +12,14 @@ export default createEslintRule<Options, MessageIds>({
   meta: {
     docs: {
       description: 'Disallow awaiting a value that is not an Observable',
-      recommended: 'error',
-      requiresTypeChecking: true,
     },
     messages: {
       await: 'Unexpected `await` of an rxjs Observable.',
     },
     schema: [],
     type: 'problem',
+    defaultOptions: [],
   },
-  defaultOptions: [],
 
   create(context) {
     const parserServices = tsEslintUtils.ESLintUtils.getParserServices(context);

@@ -1,17 +1,25 @@
 {
-	"compilerOptions": {
-		"target": "es2019",
-		"module": "commonjs",
-		"sourceMap": false,
-		"outDir": "dist",
-		"strict": true,
-		"skipLibCheck": true,
-		"esModuleInterop": true,
-	},
-	"include": [
-		"src",
-	],
-	"exclude": [
-		"node_modules",
-	],
+  "compilerOptions": {
+    "target": "es2019",
+    "module": "node16",
+    "moduleResolution": "node16",
+    "sourceMap": false,
+    "noEmit": true,
+    "outDir": "dist",
+    "strict": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "esModuleInterop": true,
+    "types": [
+      "node",
+    ],
+  },
+  "include": [
+    "src",
+    "tests",
+    "jest.config.ts",
+  ],
+  "exclude": [
+    "node_modules",
+  ],
 }
